@@ -1,0 +1,42 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "appcast": false,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Export",
+      "identifier": "export",
+      "script": "./export.js",
+      "icon": "export.png"
+    },
+    {
+      "name": "Import",
+      "identifier": "import",
+      "script": "./import.js",
+      "icon": "import.png"
+    },
+    {
+      "name": "Refresh files",
+      "identifier": "refresh-files",
+      "script": "./refresh-files.js",
+      "icon": "refresh.png"
+    },
+    {
+      "name": "Commit Changes",
+      "identifier": "commit-changes",
+      "script": "./commit-changes.js",
+      "icon": "export.png"
+    }
+    {
+      "name": "Pull Changes",
+      "identifier": "pull-changes",
+      "script": "./pull-changes.js",
+      "icon": "import.png"
+    }
+  ],
+  "menu": {
+    "title": "🌵 Prickly",
+    "items": ["export", "import", "commit", "pull"]
+  }
+}

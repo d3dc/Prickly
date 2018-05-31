@@ -1,0 +1,36 @@
+{
+  "name": "kactus",
+  "version": "0.3.6",
+  "skpm": {
+    "description": "A simpler version control tool for nerds",
+    "main": "/out/Prickly.sketchplugin",
+    "assets": [
+      "assets/*.png"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "skpm-build"
+  },
+  "keywords": [
+    "kactus",
+    "sketch",
+    "plugin"
+  ],
+  "author": {
+    "name": "Sam Richard",
+    "email": "sam@d3dc.io",
+    "url": "http://d3dc.io"
+  },
+  "license": "MIT",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "manifest": "src/manifest.json",
+  "devDependencies": {
+    "@skpm/builder": "^0.4.0"
+  },
+  "dependencies": {
+    "kactus-cli": "^0.4.6"
+  }
+}
