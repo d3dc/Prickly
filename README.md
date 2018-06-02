@@ -2,7 +2,7 @@
 
 This is a Sketch plugin to add menu items for `kactus-cli` - letting you use it as part of your existing workflow without an additional app.
 
-![Example Screenshot](/d3dc/Prickly/docs/example.png)
+![Example Screenshot](/docs/example.png)
 
 ## Requirements
 
