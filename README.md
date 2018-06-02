@@ -33,7 +33,7 @@ This is a Sketch plugin to add menu items for `kactus-cli` - letting you use it 
 * Git hooks?
 
 ## Difference from the Git plugin
-The git plugin provides a lot of the features that Kactus does dynamically - statically. But it does it by brute-force rendering every symbol every commit. This plugin instead only creates commits that Kactus can understand.
+The git plugin provides a lot of the features that Kactus does dynamically - statically. But it does it by brute-force rendering every symbol every commit. This plugin instead only unzips the sketch file and makes sketch's json format git-friendly.
 
 ## About this project
 
