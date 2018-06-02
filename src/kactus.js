@@ -11,5 +11,5 @@ export function parse (context) {
 
 export function importFolder (context) {
   const folderPath = getDocumentFolderPath(context.document.fileURL().path())
-  exec(context, `kactus import ${folderPath}`)
+  exec(context, `kactus import "${folderPath}"`)
 }
