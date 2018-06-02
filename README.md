@@ -8,7 +8,9 @@ This is a Sketch plugin to add menu items for `kactus-cli` - letting you use it 
 
 * Sketch 44+
 
-^Kactus itself is not required
+* kactus-cli (am I allowed to bundle this?)
+
+<sup>Kactus itself is not required</sup>
 
 ## Installation
 
@@ -21,6 +23,11 @@ This is a Sketch plugin to add menu items for `kactus-cli` - letting you use it 
 * Select "Prickly > Commit Changes"
 * ...
 * Profit!
+
+## Future
+
+* File watching
+* Git hooks?
 
 ## About this project
 
