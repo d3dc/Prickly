@@ -1,13 +1,13 @@
-function openFile(path) {
-  NSWorkspace.sharedWorkspace().openURL(
-    NSURL.URLWithString('kactus://importsketchfile/' + path)
-  )
+const { importFolder } = require('kactus-cli')
+const { checkForFile } = require('./common')
+
+function getDocumentFolderPath (path) {
+  return path.replace('.sketch', '')
 }
 
-export default function(context) {
-  if (!context.document.fileURL()) {
-    context.document.showMessage('Open a file first ;)')
-  } else {
-    openFile(context.document.fileURL().path())
-  }
+export default function (context) {
+  if (!checkForFile(context)) { return }
+  importFolder(
+    getDocumentFolderPath(context.document.fileURL().path())
+  )
 }

@@ -1,13 +1,7 @@
-function openFile(path) {
-  NSWorkspace.sharedWorkspace().openURL(
-    NSURL.URLWithString('kactus://parsesketchfile/' + path)
-  )
-}
+const { parseFile } = require('kactus-cli')
+const { checkForFile } = require('./common')
 
-export default function(context) {
-  if (!context.document.fileURL()) {
-    context.document.showMessage('Open a file first ;)')
-  } else {
-    openFile(context.document.fileURL().path())
-  }
+export default function (context) {
+  if (!checkForFile(context)) { return }
+  parseFile(context.document.fileURL().path())
 }
