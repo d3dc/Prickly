@@ -77,7 +77,7 @@ export function createFailAlert (context, title, error, buttonToReport) {
         }
       } catch (e) {}
     }
-    var urlString = `https://github.com/mathieudutour/git-sketch-plugin/issues/new?body=${encodeURIComponent('### How did it happen?\n1.\n2.\n3.\n\n\n### Error log\n\n```\n' + errorString + '\n```')}`
+    var urlString = `https://github.com/d3dc/Prickly/issues/new?body=${encodeURIComponent('### How did it happen?\n1.\n2.\n3.\n\n\n### Error log\n\n```\n' + errorString + '\n```')}`
     var url = NSURL.URLWithString(urlString)
     NSWorkspace.sharedWorkspace().openURL(url)
   }
