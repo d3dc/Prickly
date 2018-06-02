@@ -10,10 +10,13 @@ This is a Sketch plugin to add menu items for `kactus-cli` - letting you use it 
 
 * kactus-cli (am I allowed to bundle this?)
 
+  `npm install -g kactus-cli`
+
 <sup>Kactus itself is not required</sup>
 
 ## Installation
 
+* [Download a release](https://github.com/d3dc/Prickly/releases)
 * Unzip
 * Double click `Prickly.sketchplugin`
 
