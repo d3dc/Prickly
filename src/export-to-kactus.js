@@ -1,14 +1,15 @@
 import {
   checkForFile,
-  executeSafely,
-  exec
+  executeSafely
 } from './common'
+
+import { parse } from './kactus'
 
 export default function (context) {
   if (!checkForFile(context)) { return }
 
-  executeSafely(context, function () {
-    const filePath = context.document.fileURL().path()
-    exec(context, `kactus parse ${filePath}`)
+  executeSafely(context, () => {
+    parse(context)
+    context.document.showMessage('Exported to Kactus')
   })
 }

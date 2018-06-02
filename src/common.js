@@ -42,6 +42,12 @@ export function exec (context, command) {
   return NSString.alloc().initWithData_encoding_(data, NSUTF8StringEncoding)
 }
 
+export function execAll (context, cmds) {
+  const single = cmds.filter(c => c).join(';')
+
+  return exec(context, single)
+}
+
 export function getCurrentDirectory (context) {
   return context.document.fileURL().URLByDeletingLastPathComponent().path()
 }

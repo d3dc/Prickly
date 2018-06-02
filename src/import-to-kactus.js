@@ -1,18 +1,17 @@
 import {
   checkForFile,
-  executeSafely,
-  exec
+  executeSafely
 } from './common'
 
-function getDocumentFolderPath (path) {
-  return path.replace('.sketch', '')
-}
+import { importFolder } from './kactus'
+import refreshFiles from './refresh-files'
 
 export default function (context) {
   if (!checkForFile(context)) { return }
 
   executeSafely(context, function () {
-    const folderPath = getDocumentFolderPath(context.document.fileURL().path())
-    exec(context, `kactus import ${folderPath}`)
+    importFolder(context)
+    context.document.showMessage('Changes imported')
+    refreshFiles(context)
   })
 }

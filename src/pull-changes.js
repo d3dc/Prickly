@@ -1,5 +1,5 @@
 // Pull
-import importToKactus from './import-to-kactus'
+import { importFolder } from './kactus'
 import refreshFiles from './refresh-files'
 
 import {
@@ -13,8 +13,8 @@ export default function (context) {
 
   executeSafely(context, function () {
     exec(context, 'git pull -q')
-    importToKactus(context)
+    importFolder(context)
     context.document.showMessage('Changes pulled')
-    refreshFiles()
+    refreshFiles(context)
   })
 }

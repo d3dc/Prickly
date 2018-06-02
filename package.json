@@ -5,7 +5,8 @@
     "description": "A simpler version control tool for nerds",
     "main": "/out/Prickly.sketchplugin",
     "assets": [
-      "assets/*.png"
+      "assets/*.png",
+      "node_modules/kactus-cli/"
     ]
   },
   "scripts": {
