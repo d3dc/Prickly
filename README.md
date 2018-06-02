@@ -32,6 +32,9 @@ This is a Sketch plugin to add menu items for `kactus-cli` - letting you use it 
 * File watching
 * Git hooks?
 
+## Difference from the Git plugin
+The git plugin provides a lot of the features that Kactus does dynamically - statically. But it does it by brute-force rendering every symbol every commit. This plugin instead only creates commits that Kactus can understand.
+
 ## About this project
 
 There are a few attempts to use Kactus to get a good git workflow going; But all of them are based on githooks and file watchers. Why run another Node process when Sketch can watch our files for us?
