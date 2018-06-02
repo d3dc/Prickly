@@ -13,6 +13,6 @@ export default function (context) {
 
   executeSafely(context, function () {
     const folderPath = getDocumentFolderPath(context.document.fileURL().path())
-    exec(`kactus import ${folderPath}`)
+    exec(context, `kactus import ${folderPath}`)
   })
 }

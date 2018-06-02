@@ -8,6 +8,7 @@ export default function (context) {
   if (!checkForFile(context)) { return }
 
   executeSafely(context, function () {
-    exec(`kactus parse ${context.document.fileURL().path()}`)
+    const filePath = context.document.fileURL().path()
+    exec(context, `kactus parse ${filePath}`)
   })
 }
