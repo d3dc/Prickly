@@ -1,6 +1,6 @@
 {
   "name": "prickly",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "skpm": {
     "description": "A simpler version control tool for nerds",
     "main": "/out/Prickly.sketchplugin",
