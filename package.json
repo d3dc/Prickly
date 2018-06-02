@@ -1,6 +1,6 @@
 {
-  "name": "kactus",
-  "version": "0.3.6",
+  "name": "prickly",
+  "version": "0.0.1",
   "skpm": {
     "description": "A simpler version control tool for nerds",
     "main": "/out/Prickly.sketchplugin",
@@ -31,6 +31,7 @@
     "@skpm/builder": "^0.4.0"
   },
   "dependencies": {
+    "@skpm/fs": "^0.1.2",
     "kactus-cli": "^0.4.6"
   }
 }

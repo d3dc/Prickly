@@ -1,5 +1,5 @@
-# build artefacts
-plugin.sketchplugin/Contents/Sketch
+# build artifacts
+out
 
 # npm
 node_modules

@@ -1,5 +1,5 @@
 // Commits all working file to git (cmd alt ctrl c)
-import export from './export'
+import exportToKactus from './export-to-kactus'
 import {
   getCurrentBranch,
   checkForFile,
@@ -10,7 +10,6 @@ import {
 
 export default function (context) {
   if (!checkForFile(context)) { return }
-
 
   executeSafely(context, function () {
     const currentBranch = getCurrentBranch(context)
@@ -23,7 +22,8 @@ export default function (context) {
     )
 
     if (input.responseCode == 1000 && input.message != null) {
-      export(context)
+      exportToKactus(context)
+
       const commitCmd =
         `git commit -m "${input.message.split('"').join('\\"')}" -a`
 

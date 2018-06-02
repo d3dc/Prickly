@@ -7,30 +7,30 @@
     {
       "name": "Export",
       "identifier": "export",
-      "script": "./export.js",
+      "script": "./export-to-kactus.js",
       "icon": "export.png"
     },
     {
       "name": "Import",
       "identifier": "import",
-      "script": "./import.js",
+      "script": "./import-to-kactus.js",
       "icon": "import.png"
     },
     {
       "name": "Refresh files",
-      "identifier": "refresh-files",
+      "identifier": "refresh",
       "script": "./refresh-files.js",
       "icon": "refresh.png"
     },
     {
       "name": "Commit Changes",
-      "identifier": "commit-changes",
+      "identifier": "commit",
       "script": "./commit-changes.js",
       "icon": "export.png"
-    }
+    },
     {
       "name": "Pull Changes",
-      "identifier": "pull-changes",
+      "identifier": "pull",
       "script": "./pull-changes.js",
       "icon": "import.png"
     }
